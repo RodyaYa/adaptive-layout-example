@@ -26,6 +26,23 @@
       display: block !important;
     }
   }
+  .container {
+    padding: 0 10px !important;
+  }
+}
+@media (max-width: @mobile-mini-media) {
+  .widgets {
+    flex-wrap: wrap;
+  }
+  .widgets__search {
+    flex-basis: 50% !important;
+  }
+  .widgets__countrySelect {
+    flex-basis: 50% !important;
+  }
+  .widget__search {
+    padding: 16px 14px 16px 15px !important;
+  }
 }
 
 .widgets {
@@ -109,6 +126,7 @@
 
   &:before {
     position: absolute;
+    white-space: nowrap;
     opacity: 0.5;
     top: 6px;
     left: 16px;
