@@ -1,0 +1,143 @@
+//main : ../index.less
+
+// -=Media=-
+@media (max-width: @tablet-media) {
+  .widgets__search {
+    flex-basis: 70% !important;
+  }
+  .widgets__countrySelect {
+    flex-basis: 30% !important;
+  }
+}
+@media (max-width: @tablet-mini-media) {
+  .widgets__search {
+    flex-basis: 60% !important;
+  }
+  .widgets__countrySelect {
+    flex-basis: 40% !important;
+  }
+}
+
+@media (max-width: @mobile-media) {
+  .widgets {
+    position: sticky;
+    top: 80px;
+    & .fader {
+      display: block !important;
+    }
+  }
+}
+
+.widgets {
+  margin-bottom: 32px;
+  z-index: 100;
+  & .fader {
+    display: none;
+    position: absolute;
+    top: -15px;
+    left: -100px;
+    width: 200%;
+    height: 100px;
+    background: #ffffff;
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #ffffff 50%,
+      #ffffff00 100%
+    );
+  }
+}
+.widgets__inner {
+  display: flex;
+  align-items: center;
+}
+.widgets__item {
+  min-height: 56px;
+  max-height: 56px;
+  background-color: white;
+  z-index: 100;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 2px 4px #3333330a, 0px 2px 16px #33333314;
+  }
+  transition: 0.3s;
+}
+.widgets__search {
+  position: relative;
+  flex-basis: 80%;
+  padding: 16px 44px 16px 35px;
+  margin-right: 20px;
+
+  &:before {
+    position: absolute;
+    left: 16px;
+    top: calc(50% - 7.5px);
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/loupe.svg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+  }
+  & input {
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.shadow_border {
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px #3333330a, 0px 4px 16px #33333314;
+}
+
+.widgets__countrySelect {
+  flex-basis: 20%;
+}
+.widgets__countrySelect__inner {
+  cursor: pointer;
+  position: relative;
+  padding: 26px 16px 6px 16px;
+  display: flex;
+  z-index: 101;
+
+  &:before {
+    position: absolute;
+    opacity: 0.5;
+    top: 6px;
+    left: 16px;
+
+    font-size: 0.8rem;
+    content: "Your country";
+    display: block;
+  }
+}
+
+.country_item_svg {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  height: 12px;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.close {
+  right: 16px;
+  width: 15px;
+  height: 9px;
+  background-image: url("../img/arrow_down.svg");
+}
+.select {
+  right: 40px;
+  width: 12px;
+  background-size: contain;
+  background-image: url("../img/close.svg");
+}
