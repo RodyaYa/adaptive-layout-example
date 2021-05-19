@@ -22,5 +22,17 @@
       background-color: darken(@main-col, 20%);
     }
   }
+  &_reverse {
+    border: 1px @main-col solid;
+    color: white;
+    background-color: @main-col;
+    &:hover {
+      color: white;
+      background-color: darken(@main-col, 5%);
+    }
+    &:active {
+      background-color: darken(@main-col, 20%);
+    }
+  }
   transition: 0.3s;
 }
