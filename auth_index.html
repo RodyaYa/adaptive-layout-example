@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <!--.auth-->
+    <div class="auth">
+      <!--.auth__inner-->
+      <div class="auth__inner">
+        <div class="auth__title">Profile</div>
+        <div class="auth__nav">
+          <div class="nav__item nav__item_active">Registration</div>
+          <div class="nav__item">Sign in</div>
+        </div>
+
+        <!--.socials-->
+        <div class="socials">
+          <div class="socials__title">You can sign in with social</div>
+          <div class="socials__container">
+            <div class="socials__item">
+              <img src="img/social_vk.svg" alt="" />
+            </div>
+            <div class="socials__item">
+              <img src="img/social_facebook.svg" alt="" />
+            </div>
+
+            <div class="socials__item">
+              <img src="img/social_google.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--.socials end-->
+
+        <!--.auth_form-->
+        <div class="auth_form">
+          <div class="auth_form__inner">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="E-Mail" />
+            <input type="text" name="phone" placeholder="Phone" />
+
+            <div class="auth_form__privacy_accept">
+              <input
+                type="checkbox"
+                name="privacy"
+                id="privacy"
+                style="display: none"
+              />
+              <label for="privacy"></label>
+              <span
+                >I accept the terms of the offer of
+                <a href="#">the privacy policy</a></span
+              >
+            </div>
+
+            <div class="auth_form__buttons">
+              <div class="btn btn_reverse">Registration</div>
+              <div class="btn">Sign in</div>
+            </div>
+          </div>
+        </div>
+        <!--.auth_form end-->
+      </div>
+      <!--.auth__inner end-->
+    </div>
+    <!--.auth end-->
+  </body>
+</html>
