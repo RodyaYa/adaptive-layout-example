@@ -7,6 +7,9 @@ const toHTML = (course) => {
           <div class="card__inner">
             <div class="card__bg_image" style="background-image: url('${course.bgPicture}')">
             <div class="fader"></div>
+            <div class='progressBar' style="width:${course.progress}%;">
+              <div class='progressBar__before'>Progress ${course.progress}%</div>
+            </div>
             </div>
             <div class="card__body">
               <div class="card__user">
